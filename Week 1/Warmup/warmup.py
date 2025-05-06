@@ -9,7 +9,8 @@ from stanfordkarel import *
 def main():
     move()
     # add your code here
-
+    pick_beeper()
+    move()
 
 
 
