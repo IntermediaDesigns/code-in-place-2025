@@ -6,6 +6,7 @@ and prints the equivalent weight on Mars.
 
 def main():
     # Fill this function out!
+    
     # Prompt the user for their weight on Earth
     weight_earth = float(input("Enter a weight on Earth: "))
     # Calculate the weight on Mars

@@ -10,11 +10,11 @@ her bag. How can you solve this puzzle?
 
 def main():
     move()
-    spread()
+    spread_beepers()
     step_back()
 
 
-def spread():
+def spread_beepers():
     while beepers_present():
         pick_beeper()
         if beepers_present():
