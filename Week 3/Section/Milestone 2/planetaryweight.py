@@ -21,6 +21,7 @@ The equivalent weight on Mars: 45.36
 
 def main():
     # Fill this function out!
+    
     # Prompt the user for their weight on Earth
     weight_earth = float(input("Enter a weight on Earth: "))
 
