@@ -7,13 +7,13 @@ Caution! Karel can't count, and starts with infinite beepers in
 her bag. How can you solve this puzzle?
 """
 
-
+# The main function to run your defined functions to move Karel and place 4 beepers int he row.
 def main():
     move()
     spread_beepers()
     step_back()
 
-
+# Define a variable to combine all of your defined parts
 def spread_beepers():
     while beepers_present():
         pick_beeper()
@@ -23,29 +23,29 @@ def spread_beepers():
             reset()
     put_beeper()
 
-
+# Define a variable to have Karel keep moving if beepers present
 def move_to_end():
     while beepers_present():
         move()
 
-
+# Define a variable to combine other functions for Karel
 def reset():
     turn_around()
     move_to_wall()
     turn_around()
     move()
 
-
+# Define a variable to have Karel keep moving while the front is clear
 def move_to_wall():
     while front_is_clear():
         move()
 
-
+# Define a variable to have Karel turn around
 def turn_around():
     turn_left()
     turn_left()
 
-
+# Define a variable to have Karel go back to the beginning
 def step_back():
     turn_around()
     move()
