@@ -7,6 +7,10 @@ and prints the equivalent weight on Mars.
 def main():
     # Fill this function out!
 
+    # Note: To round a number to 2 decimal places, you can use the round function like this:
+    # value = 45.363636
+    # rounded_value = round(value, 2)
+
     # Prompt the user for their weight on Earth
     weight_earth = float(input("Enter a weight on Earth: "))
 
