@@ -1,9 +1,5 @@
 import random
 
-# This is the number of rounds the game will be played for. You can change this value to make the game longer or shorter!
-NUM_ROUNDS = 5
-
-
 def main():
     print("Welcome to the High-Low Game!")
     print("--------------------------------")
@@ -14,7 +10,7 @@ def main():
     score = 0
 
     # Print current round
-    for round_num in range(1, NUM_ROUNDS + 1):
+    for round_num in range(1, 6):
         print(f"Round {round_num}")
 
         # Generate the random numbers for the computer and the user. Both numbers will be between 1 and 100 (inclusive).
@@ -25,14 +21,7 @@ def main():
         print(f"Your number is {user_number}")
 
         # Get user choice
-        while True:
-            user_guess = input(
-                "Do you think your number is higher or lower than the computer's?: "
-            ).lower()
-            if user_guess in ["higher", "lower"]:
-                break
-            else:
-                user_guess = input("Please enter either higher or lower: ").lower()
+        user_guess = input("Do you think your number is higher or lower than the computer's?: ").lower()
 
         # Write game logic with points
         if user_guess == "higher" and user_number > computer_number:
@@ -43,10 +32,8 @@ def main():
             score += 1
         else:
             print(f"Aww, that's incorrect. The computer's number was {computer_number}")
-        print(f"Your score is now {score}")
 
-        if round_num < NUM_ROUNDS:
-            print()
+        print(f"Your score is now {score}")
 
     print("\nThanks for playing!")
 
